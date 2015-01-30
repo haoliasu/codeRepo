@@ -23,7 +23,9 @@ namespace test
             //Opens a file and serializes the object into it in binary format.
             Stream stream = File.Open("data.xml", FileMode.Create);
             //SoapFormatter formatter = new SoapFormatter();
-           
+
+            StreamWriter strwr = new StreamWriter("data.txt",true);
+
             BinaryFormatter formatter = new BinaryFormatter();
 
             formatter.Serialize(stream, obj);
