@@ -26,6 +26,9 @@ namespace test
            
             BinaryFormatter formatter = new BinaryFormatter();
 
+            StreamWriter strwr;
+
+
             formatter.Serialize(stream, obj);
             stream.Close();
 
