@@ -26,6 +26,8 @@ namespace test
 
             StreamWriter strwr = new StreamWriter("data.txt",true);
 
+            StreamReader strrd;
+
             BinaryFormatter formatter = new BinaryFormatter();
 
             formatter.Serialize(stream, obj);
