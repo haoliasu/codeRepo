@@ -28,6 +28,8 @@ namespace test
 
             StreamReader strrd;
 
+            strrd = new StreamReader("data.txt");
+
             BinaryFormatter formatter = new BinaryFormatter();
 
             formatter.Serialize(stream, obj);
