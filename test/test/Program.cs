@@ -22,9 +22,9 @@ namespace test
 
             //Opens a file and serializes the object into it in binary format.
             Stream stream = File.Open("data.xml", FileMode.Create);
-            SoapFormatter formatter = new SoapFormatter();
-
-            //BinaryFormatter formatter = new BinaryFormatter();
+            //SoapFormatter formatter = new SoapFormatter();
+           
+            BinaryFormatter formatter = new BinaryFormatter();
 
             formatter.Serialize(stream, obj);
             stream.Close();
@@ -34,9 +34,9 @@ namespace test
 
             //Opens file "data.xml" and deserializes the object from it.
             stream = File.Open("data.xml", FileMode.Open);
-            formatter = new SoapFormatter();
+            //formatter = new SoapFormatter();
 
-            //formatter = new BinaryFormatter();
+            formatter = new BinaryFormatter();
 
             obj = (TestSimpleObject)formatter.Deserialize(stream);
             stream.Close();
