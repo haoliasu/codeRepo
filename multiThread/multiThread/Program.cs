@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace multiThread
 {
     class Program
     {
-        
+        public delegate void del(int a,int b,int[] arr);
+
         static void Main(string[] args)
         {
-
+            int[] arr=new int[10];
+           // public delegate void del(int a);
+            del maniDel=manipulate;
+           Thread th1 = new Thread(Program.manipulate(int oper, int byNum, int[] array));
+            //public delegate void 
+                
         }
-    }
-    public class manipulateNumInArray
-    {
+    
+    
+        
         public static void manipulate(int oper, int byNum, int[] array)
         {
             switch (oper)
@@ -47,11 +54,5 @@ namespace multiThread
         {
             return input * adder;
         }
-
-
-
-
-
-
     }
 }
