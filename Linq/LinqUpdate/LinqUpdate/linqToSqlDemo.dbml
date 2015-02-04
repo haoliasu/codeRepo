@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="pubs" Class="linqToSqlDemoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LIHAO-PC\CLOUDCOMPUTING;Initial Catalog=pubs;Integrated Security=True" SettingsObjectName="LinqUpdate.Properties.Settings" SettingsPropertyName="pubsConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.jobs" Member="jobs">
+    <Type Name="job">
+      <Column Name="job_id" Type="System.Int16" DbType="SmallInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="job_desc" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="min_lvl" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="max_lvl" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
