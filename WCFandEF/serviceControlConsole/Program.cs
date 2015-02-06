@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 
 namespace serviceControlConsole
 {
@@ -10,7 +12,16 @@ namespace serviceControlConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Started");
+            using(ServiceHost host=new ServiceHost(typeof(WCFandEF.Service1)))
+            {
+                //ServiceEndpoint serpoint=host.AddServiceEndpoint(typeof(WCFandEF.IService1),new BasicHttpBinding(),)
+                host.Open();
+                 Console.WriteLine("Started");
+                 Console.ReadLine();
+
+
+            }
+            
         }
     }
 }
