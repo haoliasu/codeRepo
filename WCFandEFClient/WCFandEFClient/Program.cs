@@ -11,8 +11,10 @@ namespace WCFandEFClient
         static void Main(string[] args)
         {
             ServiceReference1.Service1Client serviceClient = new ServiceReference1.Service1Client();
-            string result=serviceClient.GetData(1389);
+            string result=serviceClient.GetData(9952);
             Console.WriteLine(result);
+            Console.ReadLine();
+
         }
     }
 }
