@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFandEF", "WCFandEF\WCFandEF.csproj", "{A679E174-1C9F-4B68-8824-546DA7205986}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serviceControlConsole", "serviceControlConsole\serviceControlConsole.csproj", "{47D9B2EA-2215-4900-A9F3-DDFC23BB2AFB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A679E174-1C9F-4B68-8824-546DA7205986} = {A679E174-1C9F-4B68-8824-546DA7205986}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A679E174-1C9F-4B68-8824-546DA7205986}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A679E174-1C9F-4B68-8824-546DA7205986}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A679E174-1C9F-4B68-8824-546DA7205986}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A679E174-1C9F-4B68-8824-546DA7205986}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D9B2EA-2215-4900-A9F3-DDFC23BB2AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D9B2EA-2215-4900-A9F3-DDFC23BB2AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D9B2EA-2215-4900-A9F3-DDFC23BB2AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D9B2EA-2215-4900-A9F3-DDFC23BB2AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
